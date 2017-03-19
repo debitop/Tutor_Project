@@ -45,7 +45,7 @@ public class Test01 {
         char[] vowels = new char[]{'а', 'я', 'у', 'ю', 'и', 'ы', 'э', 'е', 'о', 'ё'};
         for (int i = 0; i < vowels.length; i++) {
             if (x == vowels[i]) {
-                return true;
+                 return true;
             }
         }
         return false;
