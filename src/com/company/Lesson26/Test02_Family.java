@@ -62,15 +62,14 @@ public class Test02_Family {
         @Override
         public String toString() {
             String text = "";
-            text+="имя: "+this.name;
-            text+=", пол: "+(this.pol?"мужской":"женский");
-            text+=", возраст: "+this.age;
-            if (this.children!=null){
-                text+=", дети: "+children.get(0).name;
-                for (int i=1; i<children.size();i++){
-                    text+=", "+children.get(i).name;
+            text += "имя: " + this.name;
+            text += ", пол: " + (this.pol ? "мужской" : "женский");
+            text += ", возраст: " + this.age;
+            if (this.children != null) {
+                text += ", дети: " + children.get(0).name;
+                for (int i = 1; i < children.size(); i++) {
+                    text += ", " + children.get(i).name;
                 }
-
             }
 
 
