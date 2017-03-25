@@ -20,19 +20,22 @@ findTheNumbers(a) = [3, 6].
  */
 public class findTheNumbers {
     public static void main(String[] args) {
-        int[] array = {1, 3, 5, 6, 1, 4, 3, 6};
+        int[] array = {1, 3, 5, 6, 1, 9, 3, 6};
         Arrays.sort(array);
-        int[] newAraay = new int[2];
+  //      int[] newAraay = new int[2];
+  //      int j = 0;
         for (int i = 0; i < array.length-1; i++) {
-            int j = 0;
-            if (array[i] != array[i + 1]) {
 
-                newAraay[j] = array[i];
-                j++;
+            if (array[i] == array[i + 1]) {
+
+                array[i]=0;
+                array[i+1]=0;
             }
         }
-        for (int i=0; i<2; i++){
-            System.out.println(newAraay[i]);
-        }
+        Arrays.sort(array);
+
+            System.out.println(array[array.length-2]);
+            System.out.println(array[array.length-1]);
+
     }
 }
