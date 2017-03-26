@@ -1,6 +1,7 @@
 package com.company.Lesson21_OOP.OOP_test;
 
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,14 +14,9 @@ import java.util.List;
  */
 public class Test03 {
     public static void main(String[] args) {
-        Test01 t = new Test02("Jora");
-        System.out.println(t.getName());
-        System.out.println(t.method());
-        List<String> list = new LinkedList<>();
-
-        String n = "t";
-        String i = "t";
-        String b = new String("t");
-
+        Test01 t1 = new Test02("Jora");
+        t1.setName("Kolya");
+        System.out.println(t1.method1());
+        System.out.println(t1.getName());
     }
 }

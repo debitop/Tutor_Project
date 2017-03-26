@@ -5,19 +5,13 @@ package com.company.Lesson21_OOP.OOP_test;
  * JDK -> JRE -> JVM
  */
 public class Test02 extends Test01{
+
     public Test02(String name) {
         super(name);
     }
 
     @Override
-    public String method() {
-        return super.method()+"ееееееееееееееее";
+    public String method1() {
+        return "prog";
     }
-
-    @Override
-    public void met() {
-
-    }
-
-
 }
