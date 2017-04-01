@@ -1,7 +1,6 @@
-package com.company.Lesson09;
+package com.company.Lesson09_List;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
