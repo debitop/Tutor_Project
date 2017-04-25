@@ -26,6 +26,9 @@ import java.io.InputStreamReader;
 3.4. Вызывает метод enjoy(), если person имеет тип Proger.
 */
 public class Test01 {
+    static int a= 5;
+
+
     public static void main(String[] args) throws IOException {
          BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
          while (true){
@@ -46,6 +49,10 @@ public class Test01 {
              else break;
              doWork(person);
          }
+    }
+    static void m(){
+        System.out.println("My method");
+
     }
     static void doWork(Person person){
         if (person instanceof Person.User){

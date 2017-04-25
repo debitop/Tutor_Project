@@ -1,5 +1,7 @@
 package com.company.Lesson35_Bridge_Persons_OOP.Task01_Bridge;
 
+import com.company.Lesson35_Bridge_Persons_OOP.Task02_Persons___factory_metod.Test01;
+
 /**
  * Created by Саша on 23.04.2017.
  */
@@ -12,8 +14,10 @@ package com.company.Lesson35_Bridge_Persons_OOP.Task01_Bridge;
 6. В методе println вывести на консоль значение getCarsCount() для объекта bridge.
 7. Каждый класс и интерфейс должны быть в отдельных файлах.
 */
-public class Solution {
+public class Solution  {
     public static void println(Bridge bridge){
         System.out.println(bridge.getCarsCount());
     }
+
+
 }
