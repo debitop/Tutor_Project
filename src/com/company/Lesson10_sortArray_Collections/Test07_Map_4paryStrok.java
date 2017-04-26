@@ -1,4 +1,4 @@
-package com.company.Lesson10;
+package com.company.Lesson10_sortArray_Collections;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -14,7 +14,7 @@ import java.util.Map;
 Пример вывода (тут показана только одна строка):
 груша - фрукт
 */
-public class Test07 {
+public class Test07_Map_4paryStrok {
     public static void main(String[] args) {
         Map<String, String>map =new HashMap<>();
         map.put("арбуз", "ягода");

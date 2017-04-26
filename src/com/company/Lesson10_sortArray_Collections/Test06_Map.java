@@ -1,4 +1,4 @@
-package com.company.Lesson10;
+package com.company.Lesson10_sortArray_Collections;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Created by Саша on 22.11.2016.
  */
-public class Test06 {
+public class Test06_Map {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
         map.put("first", "1");

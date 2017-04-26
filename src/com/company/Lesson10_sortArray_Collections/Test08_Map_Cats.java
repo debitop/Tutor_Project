@@ -1,4 +1,4 @@
-package com.company.Lesson10;
+package com.company.Lesson10_sortArray_Collections;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +19,7 @@ import java.util.Map;
 мурка - МУРКА
 ...
 */
-public class Test08 {
+public class Test08_Map_Cats {
     public static void main(String[] args) {
         Map<String, Cat> map = new HashMap<>();
         String[] cats = new String[] {"васька", "мурка", "дымка", "рыжик", "серый", "снежок", "босс", "борис", "визя", "гарфи", null};

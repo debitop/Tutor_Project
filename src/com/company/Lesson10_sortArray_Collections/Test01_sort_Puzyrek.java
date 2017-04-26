@@ -1,4 +1,4 @@
-package com.company.Lesson10;
+package com.company.Lesson10_sortArray_Collections;
 
 import java.io.BufferedReader;
 import java.io.IOException;
