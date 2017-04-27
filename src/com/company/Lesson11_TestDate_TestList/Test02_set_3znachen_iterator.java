@@ -1,4 +1,4 @@
-package com.company.Lesson11;
+package com.company.Lesson11_TestDate_TestList;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -9,7 +9,7 @@ import java.util.Set;
  */
 //set, 3 значения и вывод итератором
 
-public class Test02 {
+public class Test02_set_3znachen_iterator {
     public static void main(String[] args) {
         Set<String>set = new HashSet<>();
         set.add("Арбуз");

@@ -1,14 +1,13 @@
-package com.company.Lesson11;
+package com.company.Lesson11_TestDate_TestList;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
  * Created by Саша on 27.11.2016.
  */
 //List, 3 значения, пройти итератором
-public class Test03 {
+public class Test03_list_3znachen_iter {
     public static void main(String[] args) {
         List<String>list = new ArrayList<>();
         list.add("Арбуз");

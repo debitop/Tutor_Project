@@ -1,4 +1,4 @@
-package com.company.Lesson12;
+package com.company.Lesson12_TestList_Set_Map;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -12,7 +12,7 @@ import java.util.List;
 Измерить, сколько времени занимает 10 тысяч вызовов get для каждого списка.
 Метод getTimeMsOfGet  должен вернуть время его исполнения в миллисекундах.
 */
-public class Test01 {
+public class Test01_TestList {
     public static void main(String[] args) {
         List list1 = new ArrayList();
         List list2 = new LinkedList();

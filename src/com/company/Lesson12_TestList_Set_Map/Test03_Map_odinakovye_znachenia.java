@@ -1,4 +1,4 @@
-package com.company.Lesson12;
+package com.company.Lesson12_TestList_Set_Map;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -11,7 +11,7 @@ import java.util.Map;
 Создать словарь (Map<String, String>) занести в него десять записей по принципу «Фамилия» - «Имя».
 Проверить сколько людей имеют совпадающие с заданным имя или фамилию.
 */
-public class Test03 {
+public class Test03_Map_odinakovye_znachenia {
     public static void main(String[] args) {
         Map<String, String> map = createMap();
         System.out.println(getCountTheSameFirstName(map, "Sim"));

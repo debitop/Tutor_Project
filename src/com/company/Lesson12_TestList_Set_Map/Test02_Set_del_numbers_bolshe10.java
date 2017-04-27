@@ -1,4 +1,4 @@
-package com.company.Lesson12;
+package com.company.Lesson12_TestList_Set_Map;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -11,7 +11,7 @@ import java.util.Set;
 Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.
 При помощи метода  removeAllNumbersMoreThan10 удалить из множества все числа больше 10.
 */
-public class Test02 {
+public class Test02_Set_del_numbers_bolshe10 {
     public static void main(String[] args) {
         Set<Integer>set =new HashSet<>();
         for (int i=0; i<20; i++) {
