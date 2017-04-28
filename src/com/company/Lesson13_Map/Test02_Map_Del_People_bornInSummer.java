@@ -1,4 +1,4 @@
-package com.company.Lesson13;
+package com.company.Lesson13_Map;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import java.util.Map;
 Создать словарь (Map<String, Date>) и занести в него десять записей по принципу: «фамилия» - «дата рождения».
 Удалить из словаря всех людей, родившихся летом.
 */
-public class Test02 {
+public class Test02_Map_Del_People_bornInSummer {
     public static void main(String[] args) {
         Map<String, Date>map =createMap();
         deleteMap(map);

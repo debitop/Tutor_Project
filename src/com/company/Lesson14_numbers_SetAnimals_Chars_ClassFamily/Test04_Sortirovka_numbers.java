@@ -1,4 +1,4 @@
-package com.company.Lesson14;
+package com.company.Lesson14_numbers_SetAnimals_Chars_ClassFamily;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.util.Collections;
 /* Пять наибольших чисел
 Создать массив на 10 чисел. Заполнить его числами с клавиатуры. Вывести пять наибольших чисел.
 */
-public class Test04_Sortirovka {
+public class Test04_Sortirovka_numbers {
     public static void main(String[] args) throws IOException {
         Integer[] array = createMas();
         sort1(array);

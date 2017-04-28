@@ -1,4 +1,4 @@
-package com.company.Lesson14;
+package com.company.Lesson14_numbers_SetAnimals_Chars_ClassFamily;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.util.List;
 2. Считать N целых чисел и заполнить ими список - метод getIntegerList.
 3. Найти минимальное число среди элементов списка - метод getMinimum.
 */
-public class Test01 {
+public class Test01_min_fromN_numbers_withExceptions {
     public static void main(String[] args)  {
         List<Integer> list = null;
         try {

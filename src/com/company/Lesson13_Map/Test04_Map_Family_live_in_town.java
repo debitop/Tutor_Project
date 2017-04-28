@@ -1,4 +1,4 @@
-package com.company.Lesson13;
+package com.company.Lesson13_Map;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,7 +24,7 @@ import java.util.Map;
 Пример вывода:
 Абрамовичи
 */
-public class Test04 {
+public class Test04_Map_Family_live_in_town {
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) throws IOException {
         Map<String,String>map = createMap();

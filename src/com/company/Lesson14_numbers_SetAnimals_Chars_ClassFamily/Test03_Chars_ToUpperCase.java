@@ -1,4 +1,4 @@
-package com.company.Lesson14;
+package com.company.Lesson14_numbers_SetAnimals_Chars_ClassFamily;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,7 +18,7 @@ import java.io.InputStreamReader;
 Пример вывода:
   Мама     Мыла Раму.
 */
-public class Test03_Chars {
+public class Test03_Chars_ToUpperCase {
     public static void main(String[] args) throws IOException {
          BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
          String s = reader.readLine();

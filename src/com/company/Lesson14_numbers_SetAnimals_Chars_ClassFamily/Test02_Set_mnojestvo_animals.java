@@ -1,4 +1,4 @@
-package com.company.Lesson14;
+package com.company.Lesson14_numbers_SetAnimals_Chars_ClassFamily;
 
 
 import java.util.HashSet;
@@ -15,7 +15,7 @@ import java.util.Set;
 5. Реализовать метод removeCats, котороый должен удалять из множества pets всех котов, которые есть в множестве cats.
 6. Реализовать метод printPets, котороый должен выводить на экран всех животных, которые в нем есть. Каждое животное с новой строки
 */
-public class Test02 {
+public class Test02_Set_mnojestvo_animals {
     public static void main(String[] args) {
         Set<Cat>setCats = createCats();
         Set<Dog>setDog = createDogs();

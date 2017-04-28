@@ -1,4 +1,4 @@
-package com.company.Lesson13;
+package com.company.Lesson13_Map;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import java.util.Map;
 Программа вводит с клавиатуры имя месяца и выводит его номер на экран в виде: «May is 5 month».
 Используйте коллекции.
 */
-public class Test03 {
+public class Test03_Map_NumberOfMonth {
     public static void main(String[] args) throws IOException {
        Map<String,Integer>map =  createMap();
        searchMap(map);

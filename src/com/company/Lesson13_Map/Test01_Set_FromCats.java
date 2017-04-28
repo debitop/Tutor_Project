@@ -1,4 +1,4 @@
-package com.company.Lesson13;
+package com.company.Lesson13_Map;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -13,7 +13,7 @@ import java.util.Set;
 3. В методе main удалите одного кота из Set cats.
 4. Реализовать метод printCats, он должен вывести на экран всех котов, которые остались во множестве. Каждый кот с новой строки.
 */
-public class Test01 {
+public class Test01_Set_FromCats {
     public static void main(String[] args) {
         Set<Cat> cats = createCats();
 /*        for (Cat cat : cats) {
