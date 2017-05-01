@@ -1,4 +1,4 @@
-package com.company.Lesson15;
+package com.company.Lesson15_Map_List_getStackTrace;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.List;
  * Created by Саша on 11.12.2016.
  */
 //10 чисел (список или массивы), сортировка по возраст, вывод
-public class Test02 {
+public class Test02_List_Sort_numbers {
     public static void main(String[] args) throws IOException {
         List<Integer> list = createList();
         sortList(list);

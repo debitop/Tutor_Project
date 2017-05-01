@@ -1,4 +1,4 @@
-package com.company.Lesson15;
+package com.company.Lesson15_Map_List_getStackTrace;
 
 /**
  * Created by Саша on 11.12.2016.
@@ -7,7 +7,7 @@ package com.company.Lesson15;
 Написать пять методов, которые вызывают друг друга. Каждый метод должен возвращать имя метода,
 вызвавшего его, полученное с помощью StackTrace.
 */
-public class Test05 {
+public class Test05_getMethodName_getStackTrace {
     public static void main(String[] args) {
         metod1();
     }

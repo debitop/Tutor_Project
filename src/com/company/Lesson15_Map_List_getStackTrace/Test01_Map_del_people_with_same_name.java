@@ -1,4 +1,4 @@
-package com.company.Lesson15;
+package com.company.Lesson15_Map_List_getStackTrace;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -11,7 +11,7 @@ import java.util.Map;
 Создать словарь (Map<String, String>) занести в него десять записей по принципу «фамилия» - «имя».
 Удалить людей, имеющих одинаковые имена.
 */
-public class Test01 {
+public class Test01_Map_del_people_with_same_name {
     public static void main(String[] args) {
         Map<String,String> map = createMap();
         map = deleteMap(map);

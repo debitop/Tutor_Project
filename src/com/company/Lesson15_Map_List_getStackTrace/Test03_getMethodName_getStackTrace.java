@@ -1,11 +1,11 @@
-package com.company.Lesson15;
+package com.company.Lesson15_Map_List_getStackTrace;
 
 /**
  * Created by Саша on 11.12.2016.
  * LIFO - last in first out (Stack)
  *
  */
-public class Test03 {
+public class Test03_getMethodName_getStackTrace {
     public static void main(String[] args) {
         method1();
     }
