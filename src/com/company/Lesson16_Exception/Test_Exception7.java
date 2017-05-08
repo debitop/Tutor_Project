@@ -1,4 +1,4 @@
-package com.company.Lesson16;
+package com.company.Lesson16_Exception;
 
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;

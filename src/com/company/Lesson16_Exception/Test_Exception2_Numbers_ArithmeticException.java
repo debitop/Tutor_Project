@@ -1,4 +1,4 @@
-package com.company.Lesson16;
+package com.company.Lesson16_Exception;
 
 /**
  * Created by Саша on 13.12.2016.
@@ -7,7 +7,7 @@ package com.company.Lesson16;
 Перехватить исключение (и вывести его на экран), указав его тип, возникающее при выполнении кода:
 int a = 42 / 0;
 */
-public class Test_Exception2 {
+public class Test_Exception2_Numbers_ArithmeticException {
     public static void main(String[] args) {
        try {
            int a=42/0;

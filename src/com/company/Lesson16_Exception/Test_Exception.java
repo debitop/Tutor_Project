@@ -1,4 +1,4 @@
-package com.company.Lesson16;
+package com.company.Lesson16_Exception;
 
 /**
  * Created by Саша on 13.12.2016.

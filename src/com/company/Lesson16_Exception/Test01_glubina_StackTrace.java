@@ -1,4 +1,4 @@
-package com.company.Lesson16;
+package com.company.Lesson16_Exception;
 
 /**
  * Created by Саша on 13.12.2016.
@@ -7,7 +7,7 @@ package com.company.Lesson16;
 Написать метод, который возвращает результат – глубину его стек трейса – количество методов в нем
 (количество элементов в списке). Это же число метод должен выводить на экран.
 */
-public class Test01 {
+public class Test01_glubina_StackTrace {
     public static void main(String[] args) {
         metod1();
 

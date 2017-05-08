@@ -1,4 +1,4 @@
-package com.company.Lesson16;
+package com.company.Lesson16_Exception;
 
 /**
  * Created by Саша on 13.12.2016.
@@ -6,7 +6,7 @@ package com.company.Lesson16;
 /* Стек-трейс длиной 10 вызовов
 Напиши код, чтобы получить стек-трейс длиной 10 вызовов.
 */
-public class Test02 {
+public class Test02_StackTrace_lenght10 {
     public static void main(String[] args) {
        metod3();
 

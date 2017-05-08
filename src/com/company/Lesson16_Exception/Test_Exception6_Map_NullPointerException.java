@@ -1,4 +1,4 @@
-package com.company.Lesson16;
+package com.company.Lesson16_Exception;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,7 @@ Map<String, String> map = new HashMap<String, String>(null);
 map.put(null, null);
 map.remove(null);
 */
-public class Test_Exception6 {
+public class Test_Exception6_Map_NullPointerException {
     public static void main(String[] args) {
         try {
             Map<String, String> map = new HashMap<>(null);

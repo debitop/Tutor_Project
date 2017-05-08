@@ -1,4 +1,4 @@
-package com.company.Lesson16;
+package com.company.Lesson16_Exception;
 
 /**
  * Created by Саша on 13.12.2016.
@@ -8,7 +8,7 @@ package com.company.Lesson16;
 String s = null;
 String m = s.toLowerCase();
 */
-public class Test_Exception3 {
+public class Test_Exception3_String_NullPointerException {
     public static void main(String[] args) {
         String s = null;
         try {

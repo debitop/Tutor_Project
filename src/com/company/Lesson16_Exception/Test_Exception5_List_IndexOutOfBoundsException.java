@@ -1,4 +1,4 @@
-package com.company.Lesson16;
+package com.company.Lesson16_Exception;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
 ArrayList<String> list = new ArrayList<String>();
 String s = list.get(18);
 */
-public class Test_Exception5 {
+public class Test_Exception5_List_IndexOutOfBoundsException {
     public static void main(String[] args) {
         List<String> list = new ArrayList<String>();
         try {
