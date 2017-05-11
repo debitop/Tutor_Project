@@ -1,4 +1,4 @@
-package com.company.Lesson17;
+package com.company.Lesson17_Exception_02;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -13,7 +13,7 @@ import java.util.Set;
 Создать словарь Map(<String, Cat>) и добавить туда 10 котов в виде «Имя»-«Кот».
 Получить из Map множество(Set) всех имен и вывести его на экран.
 */
-public class Test06 {
+public class Test06_10cats {
     public static void main(String[] args) {
         convertMapToSet(createMap());
     }

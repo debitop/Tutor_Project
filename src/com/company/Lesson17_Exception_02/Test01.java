@@ -1,4 +1,4 @@
-package com.company.Lesson17;
+package com.company.Lesson17_Exception_02;
 
 /**
  * Created by Саша on 18.12.2016.

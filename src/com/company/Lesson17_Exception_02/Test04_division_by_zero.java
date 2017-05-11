@@ -1,4 +1,4 @@
-package com.company.Lesson17;
+package com.company.Lesson17_Exception_02;
 
 /**
  * Created by Саша on 18.12.2016.
@@ -7,7 +7,7 @@ package com.company.Lesson17;
 Создай метод public static void divisionByZero, в котором подели любое число на ноль и выведи на экран результат деления.
 Оберни вызов метода divisionByZero в try..catch. Выведи стек-трейс исключения используя метод exception.printStackTrace()
 */
-public class Test04 {
+public class Test04_division_by_zero {
     public static void main(String[] args) {
         try {
             divisionByZero();

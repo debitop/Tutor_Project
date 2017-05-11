@@ -1,4 +1,4 @@
-package com.company.Lesson17;
+package com.company.Lesson17_Exception_02;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.rmi.RemoteException;
 Можно использовать только один блок try..
 IOException, RemoteException, FileNotFoundException
 */
-public class Test02 {
+public class Test02_perehvat_checked_exception {
     public static void main(String[] args) {
         processExceptions();
     }

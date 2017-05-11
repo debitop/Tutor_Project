@@ -1,4 +1,4 @@
-package com.company.Lesson17;
+package com.company.Lesson17_Exception_02;
 
 /**
  * Created by Саша on 18.12.2016.
@@ -9,7 +9,7 @@ package com.company.Lesson17;
 Можно использовать только один блок try..
 NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException
 */
-public class Test03 {
+public class Test03_perehvat_unchecked_exception {
     public static void main(String[] args) {
         processExceptions();
     }
