@@ -1,4 +1,4 @@
-package com.company.Lesson18;
+package com.company.Lesson18_exception_chars;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,7 +20,7 @@ public static char[] vowels = new char[]{'а', 'я', 'у', 'ю', 'и', 'ы', 'э
 а а ы а а у
 М м м л р м .
 */
-public class Test02 {
+public class Test02_chars_glasnie_i_soglasnie {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String vvod = reader.readLine();

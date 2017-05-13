@@ -1,4 +1,4 @@
-package com.company.Lesson18;
+package com.company.Lesson18_exception_chars;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 /**
  * Created by Саша on 20.12.2016.
  */
-public class Test03 {
+public class Test03_chars {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String vvod = reader.readLine();

@@ -1,12 +1,10 @@
-package com.company.Lesson18;
+package com.company.Lesson18_exception_chars;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
 
 /**
@@ -17,7 +15,7 @@ import java.util.Locale;
 Вывести на экран эту дату в виде «AUG 18, 2013».
 Воспользоваться объектом Date и SimpleDateFormat.
 */
-public class Test01 {
+public class Test01_exception_converter_date {
     public static void main(String[] args) throws IOException {
         Date today;
 
