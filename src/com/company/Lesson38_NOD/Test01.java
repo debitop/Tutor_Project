@@ -1,4 +1,4 @@
-package com.company.Lesson38;
+package com.company.Lesson38_NOD;
 
 /**
  * Created by Саша on 09.05.2017.
