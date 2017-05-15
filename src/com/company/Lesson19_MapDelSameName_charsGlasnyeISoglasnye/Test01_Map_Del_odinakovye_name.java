@@ -1,7 +1,6 @@
-package com.company.Lesson19;
+package com.company.Lesson19_MapDelSameName_charsGlasnyeISoglasnye;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 

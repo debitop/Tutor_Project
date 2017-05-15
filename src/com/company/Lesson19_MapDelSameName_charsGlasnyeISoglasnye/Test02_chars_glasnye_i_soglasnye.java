@@ -1,4 +1,4 @@
-package com.company.Lesson19;
+package com.company.Lesson19_MapDelSameName_charsGlasnyeISoglasnye;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,37 +20,31 @@ public static char[] vowels = new char[]{'а', 'я', 'у', 'ю', 'и', 'ы', 'э
 а а ы а а у
 М м м л р м .
 */
-public class Test03 {
+public class Test02_chars_glasnye_i_soglasnye {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
         String glasnye = "";
         String soglasnye = "";
         char[] chars = s.toCharArray();
+        char[] vowels = new char[]{'а', 'я', 'у', 'ю', 'и', 'ы', 'э', 'е', 'о', 'ё'};
+        for (int i = 0; i < chars.length; i++) {
+            int count = 0;
+            for (int j = 0; j < vowels.length; j++) {
 
-        for (int i=0; i<chars.length; i++){
-            if (isVowels(chars[i])==true){
-                glasnye += (chars[i] + " ");
+                if (chars[i] == vowels[j]) {
+                    glasnye += (chars[i] + " ");
+                    count++;
+                }
+
             }
-            else if (chars[i]==' ')
-                continue;
-            else soglasnye += (chars[i] + " ");
+            if (count == 0 && chars[i] != ' ') {
+                soglasnye += (chars[i] + " ");
+            }
         }
-
-
         System.out.println(glasnye);
         System.out.println(soglasnye);
     }
-    private static boolean isVowels(char vowel){
-        for (int i=0; i<vowels.length; i++){
-            if (vowel==vowels[i]){
-                return true;
-            }
-
-        }
-        return false;
-    }
-    public static char[] vowels = new char[]{'а', 'я', 'у', 'ю', 'и', 'ы', 'э', 'е', 'о', 'ё'};
 
 
 }
