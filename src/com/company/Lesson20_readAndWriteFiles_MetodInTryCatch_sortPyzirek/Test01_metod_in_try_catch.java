@@ -1,4 +1,4 @@
-package com.company.Lesson20;
+package com.company.Lesson20_readAndWriteFiles_MetodInTryCatch_sortPyzirek;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import java.util.List;
 то метод должен перехватить исключение и вывести на экран все введенные числа в качестве результата.
 Числа выводить с новой строки сохраняя порядок ввода.
 */
-public class Test01 {
+public class Test01_metod_in_try_catch {
     public static void main(String[] args) throws IOException {
 readData();
     }
