@@ -1,4 +1,4 @@
-package com.company.Lesson22.Task02;
+package com.company.Lesson22_OOP_instanceOf_Interface.Task02_OOP_Cat_Dog_Pet;
 
 /**
  * Created by Саша on 22.01.2017.
@@ -8,9 +8,8 @@ package com.company.Lesson22.Task02;
 В классе Pet создать метод getChild(), который возвращает экземпляр класса Pet.
 Переопределить метод getChild в классах Cat(кот) и Dog(собака), чтобы кот порождал кота, а собака – собаку.
 */
-public class Cat extends Pet{
-    @Override
-    protected Cat getChild() {
-        return new Cat();
+public class Pet {
+    protected Pet getChild(){
+        return new Pet();
     }
 }

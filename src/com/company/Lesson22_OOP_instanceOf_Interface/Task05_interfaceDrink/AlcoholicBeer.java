@@ -1,4 +1,4 @@
-package com.company.Lesson22.Task05;
+package com.company.Lesson22_OOP_instanceOf_Interface.Task05_interfaceDrink;
 
 /**
  * Created by Саша on 22.01.2017.
