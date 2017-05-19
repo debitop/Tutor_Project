@@ -1,4 +1,4 @@
-package com.company.Lesson22.Task03;
+package com.company.Lesson22_OOP_instanceOf_Interface.Task03_OOP_instanceOf;
 
 
 /**

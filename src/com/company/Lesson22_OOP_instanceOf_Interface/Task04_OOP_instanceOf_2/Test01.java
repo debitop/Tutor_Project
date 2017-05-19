@@ -1,4 +1,4 @@
-package com.company.Lesson22.Task04;
+package com.company.Lesson22_OOP_instanceOf_Interface.Task04_OOP_instanceOf_2;
 
 /**
  * Created by Саша on 22.01.2017.

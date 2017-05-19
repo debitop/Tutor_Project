@@ -1,4 +1,4 @@
-package com.company.Lesson22.Task02;
+package com.company.Lesson22_OOP_instanceOf_Interface.Task02_OOP_Cat_Dog_Pet;
 
 /**
  * Created by Саша on 22.01.2017.
