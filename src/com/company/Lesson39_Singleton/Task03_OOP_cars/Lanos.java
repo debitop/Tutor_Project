@@ -22,8 +22,8 @@ String LANOS_NAME = "Ланосе";
 чтобы в классах Ferrari и Lanos выполнялось расширение видимости.
 10. В выполняющем методе вызовите метод printlnDesire() у всех классов, в который он реализован.
 */
-public class Lanos {
-    String printlnDesire(){
-        return "Я хочу ездить на Ланосе";
+public class Lanos extends CheapCar{
+    public String printlnDesire(){
+        return Test01.Constants.WANT_STRING+ Test01.Constants.LANOS_NAME;
     }
 }
