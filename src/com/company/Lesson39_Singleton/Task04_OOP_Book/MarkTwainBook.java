@@ -23,34 +23,24 @@ package com.company.Lesson39_Singleton.Task04_OOP_Book;
 - Hercule Poirot - автор Agatha Christie
 Вывести список на экран
 */
-public abstract class Book {
-    private String author;
+public class MarkTwainBook extends Book {
+    private String bookName;
 
-    public Book(String author) {
-        this.author = author;
-    }
-
-    abstract Book getBook();
-
-    abstract String getName();
-
-    String getOutputByBookType() {
-
-        String agathaChristieOutput = author + ", " + getBook().getName() + " is a detective";
-        String markTwainOutput = getBook().getName() + " book was written by " + author;
-        String output = "";
-        if (this instanceof AgathaChristieBook) {
-            output = agathaChristieOutput;
-        } else if(this instanceof MarkTwainBook){
-            output = markTwainOutput;
-        }
-
-
-        return output;
+    public MarkTwainBook(String peremen) {
+        super("Mark Twain");
+        bookName = peremen;
     }
 
     @Override
-    public String toString() {
-        return getOutputByBookType();
+    MarkTwainBook getBook() {
+        return this;
+    }
+
+    @Override
+    String getName() {
+        return bookName;
     }
 }
+
+
+

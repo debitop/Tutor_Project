@@ -23,4 +23,7 @@ String LANOS_NAME = "Ланосе";
 10. В выполняющем методе вызовите метод printlnDesire() у всех классов, в который он реализован.
 */
 public class LuxuriousCar {
+    String printlnDesire(){
+        return Test01.Constants.WANT_STRING+ Test01.Constants.LUXURIOUS_CAR;
+    }
 }

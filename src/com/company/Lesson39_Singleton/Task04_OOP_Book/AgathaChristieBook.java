@@ -1,7 +1,7 @@
 package com.company.Lesson39_Singleton.Task04_OOP_Book;
 
 /**
- * Created by Саша on 23.05.2017.
+ * Created by Саша on 30.05.2017.
  */
 /* ООП - книги
 1. Создать абстрактный класс Book с приватным параметром author.
@@ -23,34 +23,20 @@ package com.company.Lesson39_Singleton.Task04_OOP_Book;
 - Hercule Poirot - автор Agatha Christie
 Вывести список на экран
 */
-public abstract class Book {
-    private String author;
-
-    public Book(String author) {
-        this.author = author;
-    }
-
-    abstract Book getBook();
-
-    abstract String getName();
-
-    String getOutputByBookType() {
-
-        String agathaChristieOutput = author + ", " + getBook().getName() + " is a detective";
-        String markTwainOutput = getBook().getName() + " book was written by " + author;
-        String output = "";
-        if (this instanceof AgathaChristieBook) {
-            output = agathaChristieOutput;
-        } else if(this instanceof MarkTwainBook){
-            output = markTwainOutput;
-        }
-
-
-        return output;
+public class AgathaChristieBook extends Book {
+    private String bookName;
+    public AgathaChristieBook(String peremen) {
+        super("Agatha Christie");
+        bookName=peremen;
     }
 
     @Override
-    public String toString() {
-        return getOutputByBookType();
+    AgathaChristieBook getBook() {
+        return this;
+    }
+
+    @Override
+    String getName() {
+        return bookName;
     }
 }
