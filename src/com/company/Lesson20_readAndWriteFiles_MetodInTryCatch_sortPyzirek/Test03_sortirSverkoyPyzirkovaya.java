@@ -1,4 +1,4 @@
-package com.company.Lesson20;
+package com.company.Lesson20_readAndWriteFiles_MetodInTryCatch_sortPyzirek;
 
 import java.io.BufferedReader;
 import java.io.IOException;

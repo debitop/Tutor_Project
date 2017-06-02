@@ -1,4 +1,4 @@
-package com.company.Lesson20;
+package com.company.Lesson20_readAndWriteFiles_MetodInTryCatch_sortPyzirek;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
  * Created by Саша on 10.01.2017.
  */
 //10 чисел в стат массив и сортируем в возраст порядке, выводим на экран.
-public class Test02 {
+public class Test02_sort_static_array {
     public static void main(String[] args) throws IOException {
         int [] array = new int[10];
          BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
