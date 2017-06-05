@@ -1,5 +1,8 @@
 package com.company.Lesson40.Task01;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Саша on 04.06.2017.
  */
@@ -24,17 +27,31 @@ package com.company.Lesson40.Task01;
 - Вывести на экран каждый объект
 6. Вызвать методы в main.
 */
-public class Finger extends BodyPart {
-    private boolean isFoot;
-
-    public Finger(String name, boolean isFoot) {
-        super(name);
-        this.isFoot = isFoot;
+public class Test01 {
+    public static void main(String[] args) {
+        printlnBodyParts();
+        printlnFingers();
+    }
+    public static void printlnBodyParts() {
+        List<BodyPart> list = new ArrayList<>();
+        list.add(new BodyPart("Рука"));
+        list.add(new BodyPart("Нога"));
+        list.add(new BodyPart("Голова"));
+        list.add(new BodyPart("Тело"));
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
     }
 
-
-    @Override
-    public Object containsBones() {
-        return super.containsBones().equals("Yes") && !isFoot ? "Yes" : "No";
+    public static void printlnFingers() {
+        List<Finger> list = new ArrayList<>();
+        list.add(new Finger("Большой", false));
+        list.add(new Finger("Указательный", false));
+        list.add(new Finger("Средний", true));
+        list.add(new Finger("Безымянный", true));
+        list.add(new Finger("Мезинец", false));
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
     }
 }
