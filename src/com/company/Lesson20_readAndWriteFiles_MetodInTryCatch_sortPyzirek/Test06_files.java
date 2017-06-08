@@ -1,4 +1,4 @@
-package com.company.Lesson20;
+package com.company.Lesson20_readAndWriteFiles_MetodInTryCatch_sortPyzirek;
 
 import java.io.*;
 
@@ -10,7 +10,7 @@ import java.io.*;
 Если файла (который нужно копировать) с указанным именем не существует, то
 программа должна вывести надпись «Файл не существует.» и еще раз прочитать имя файла с консоли, а уже потом считывать файл для записи.
 */
-public class Test06 {
+public class Test06_files {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         InputStream inputStream = null;

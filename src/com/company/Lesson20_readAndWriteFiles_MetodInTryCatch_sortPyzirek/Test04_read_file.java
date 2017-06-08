@@ -1,11 +1,11 @@
-package com.company.Lesson20;
+package com.company.Lesson20_readAndWriteFiles_MetodInTryCatch_sortPyzirek;
 
 import java.io.*;
 
 /**
  * Created by Саша on 10.01.2017.
  */ // Copies data in file
-public class Test04 {
+public class Test04_read_file {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 

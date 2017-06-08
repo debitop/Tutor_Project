@@ -1,4 +1,4 @@
-package com.company.Lesson22.Task01;
+package com.company.Lesson22_OOP_instanceOf_Interface.Task01_OOP_Cow_Whale;
 
 /**
  * Created by Саша on 22.01.2017.
