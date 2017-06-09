@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 /* Задача по алгоритмам
 Задача: Написать программу, которая вводит с клавиатуры 10 чисел и выводит их в убывающем порядке.
 */
-public class test02 {
+public class test02_10numbers_sort {
     public static void main(String[] args) throws IOException {
          BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
          int [] array = new int[10];

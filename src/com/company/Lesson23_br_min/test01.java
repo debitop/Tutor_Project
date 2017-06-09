@@ -1,4 +1,4 @@
-package com.company.Lesson23;
+package com.company.Lesson23_br_min;
 
 import java.io.BufferedReader;
 import java.io.IOException;
