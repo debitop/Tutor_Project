@@ -24,7 +24,7 @@ import java.util.Map;
         map.put("Stallone8", new Date("DECEMBER 1 1980"));
         map.put("Stallone9", new Date("MARCH 1 1980"));
  */
-public class test03 {
+public class test03_sort_map {
     public static void main(String[] args) {
         Map<String, Date> map = input();
 //        Map<String,Date> map1 = new HashMap<>();
