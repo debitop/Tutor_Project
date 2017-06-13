@@ -26,14 +26,31 @@ public class Test01 {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
         addName(map);
+        map=removeDublicate(map);
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry);
+        }
+    }
 
+    public static Map<String, String> removeDublicate(Map<String, String> map) {
         Map<String, String> newMap = new HashMap<>();
         for (Map.Entry<String, String> entry : map.entrySet()) {
+            int a = 0;
+            String name = entry.getValue();
+            for (String s : map.values()) {
+                if (name.equals(s)) {
+                    a++;
+                }
+            }
+            if (a == 1) {
+                newMap.put(entry.getKey(), entry.getValue());
+            }
 
         }
-
+        return newMap;
     }
-    public static void addName(Map<String,String> map){
+
+    public static void addName(Map<String, String> map) {
         map.put("Rooney", "Leo");
         map.put("Lloris", "Hugo");
         map.put("Messi", "Leo");
