@@ -16,11 +16,11 @@ package com.company.Lesson39_Singleton.Task01;
 6. В итоге должна быть возможность создать объект (экземпляр класса) ТОЛЬКО используя метод getInstance.
 */
 public class Singleton {
-    static Singleton singleton = null;
+    private static Singleton singleton = null;
     private Singleton() {
     }
 
-    static Singleton getInstance(){
+    public static Singleton getInstance(){
         if(singleton == null){
             singleton = new Singleton();
         }
