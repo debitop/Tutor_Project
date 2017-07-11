@@ -21,14 +21,24 @@ package com.company.Lesson45.Task03;
 6. В статическом блоке инициализировать Flyable result вызвав метод reset, отловить все checked исключения.
 7. В выполняющем методе сделать вывод на экран строку: The program worked! .
 */
-public class Plane implements Flyable{
-    private int num1;
-    Plane(int num1){
+public class Plane implements Flyable {
+    private int pasenger;
 
+    Plane(int pasenger) {
+        this.pasenger = pasenger;
+    }
+
+    public int getPasenger() {
+        return pasenger;
     }
 
     @Override
     public String fly() {
-        return null;
+        return "Plane is flying";
+    }
+
+    @Override
+    public String toString() {
+        return fly() + " with " + getPasenger();
     }
 }

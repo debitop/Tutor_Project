@@ -22,8 +22,22 @@ package com.company.Lesson45.Task03;
 7. В выполняющем методе сделать вывод на экран строку: The program worked! .
 */
 public class Helicopter implements Flyable{
+    private int pasenger;
+    Helicopter(int pasenger){
+        this.pasenger=pasenger;
+    }
+
+    public int getPasenger() {
+        return pasenger;
+    }
+
+    @Override
+    public String toString() {
+        return fly() + " with " + getPasenger();
+    }
+
     @Override
     public String fly() {
-        return null;
+        return "Helicopter is flying";
     }
 }
