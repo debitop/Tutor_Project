@@ -25,7 +25,7 @@ public class Factorial {
             return cache.get(n);
         }
         result = BigInteger.valueOf(n).multiply(factorial(n - 1));
-        cache.put(n, result);
+        cache.put(n, result);//a
         return result;
     }
 }
