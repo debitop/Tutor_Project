@@ -11,5 +11,5 @@ package com.company.Lesson45.Task01;
 4. В выполняющем методе выводите на экран все значения списка lines.
 */
 public class Constants {
-    static final String FILE_NAME = "C:\\Users\\Саша\\IdeaProjects\\Tutor_Project\\src\\com\\company\\Lesson45\\Task01\\cons";
+    static final String FILE_NAME = "C:\\Users\\Саша\\IdeaProjects\\Tutor_Project\\src\\com\\company\\Lesson45\\Task01_Thread_musicant\\cons";
 }

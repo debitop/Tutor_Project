@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Factorial_test {
     public static void main(String[] args) {
-        System.out.println(facrorial(10));
+        System.out.println(facrorial(12));
     }
 
     static Map<Integer, BigInteger> cache = new HashMap<>();
