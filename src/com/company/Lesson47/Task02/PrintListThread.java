@@ -1,5 +1,7 @@
 package com.company.Lesson47.Task02;
 
+import java.util.List;
+
 /* join
 1. Создать класс PrintListThread, унаследовать его от Thread
 2. В классе PrintListThread создать конструктор с параметром String name и передавать этот параметр в конструктор суперкласса
@@ -26,5 +28,10 @@ secondThread : String 20
 public class PrintListThread extends Thread {
     PrintListThread(String name) {
         super(name);
+    }
+
+    @Override
+    public void run() {
+        Test01.printList(Test01.getList(20),getName());
     }
 }
