@@ -27,16 +27,16 @@ public class Horse extends Thread {
         super(name);
     }
 
-    private boolean isFinished;
+    private volatile boolean isFinished;
 
-    public boolean isFinished() {
+    public synchronized boolean isFinished() {
         return isFinished;
     }
 
     @Override
     public void run() {
-        for (int i = 0; i < 1000; i++) {
-            if (i == 999) {
+        for (int i = 0; i < 100000; i++) {
+            if (i == 99999) {
                 System.out.println(getName() + " has finished the race!");
                 isFinished = true;
             }
