@@ -6,8 +6,8 @@ import java.util.Map;
 
 public class Factorial {
     public static void main(String[] args) {
-        System.out.println(factorial(6500));
-        System.out.println(factorial(6000));
+        System.out.println(factorial(65));
+        System.out.println(factorial(60));
     }
 
     static Map<Integer, BigInteger> cache = new HashMap<>();

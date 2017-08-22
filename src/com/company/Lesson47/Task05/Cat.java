@@ -33,15 +33,22 @@ public class Cat extends Thread {
         kit2 = new Kitten("Котенок2, мама - " + getName());
 
     }
-    void initAllKitten(){
-        kit1.run();
-        kit2.run();
+    void initAllKitten() throws InterruptedException {
+        kit1.start();
+        kit1.join();
+        kit2.start();
+        kit2.join();
     }
 
     @Override
     public void run() {
         System.out.println(getName() + " родила 2 котенка");
-        initAllKitten();
+
+        try {
+            initAllKitten();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println(getName() + ": Все котята в корзинке. " + getName() + " собрала их назад");
     }
 }

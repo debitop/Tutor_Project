@@ -20,8 +20,9 @@ package com.company.Lesson47.Task04;
 public class Politic extends Thread {
     Politic(String name){
         super(name);
+        start();
     }
-    private int countSounds;
+    private volatile int countSounds;
 
 
     @Override
@@ -30,7 +31,12 @@ public class Politic extends Thread {
             countSounds++;
         }
     }
-    int getCountSpeaches(int countSound, int soundsInOneSpeech){
-        return countSound/soundsInOneSpeech;
+    int getCountSpeaches(){
+        return countSounds/Test01.soundsInOneSpeech;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s сказал речь %d раз", getName(), getCountSpeaches());
     }
 }
