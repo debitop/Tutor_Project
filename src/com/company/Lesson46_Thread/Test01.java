@@ -1,4 +1,4 @@
-package com.company.Lesson46;
+package com.company.Lesson46_Thread;
 
 public class Test01 {
 
