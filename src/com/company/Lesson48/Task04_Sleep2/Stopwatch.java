@@ -37,15 +37,21 @@ public class Stopwatch extends Thread{
     private Runner owner;
     private int stepNumber;
 
-    void doSeveralSteps(){
+    void doSeveralSteps() throws InterruptedException {
         stepNumber++;
-       // int speed=
+       int speed2=owner.getSpeed();
+       sleep(1000);
+        System.out.println(owner.getName() + " делает шаг №" + stepNumber + "!");
     }
 
     @Override
     public void run() {
         while (!Test01.isStopped){
-            doSeveralSteps();
+            try {
+                doSeveralSteps();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

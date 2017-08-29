@@ -1,4 +1,5 @@
 package com.company.Lesson47.Task04;
+
 /* Продвижение на политических дебатах
 1. В ввыполняющем классе создать 2 статические переменные:
 - int totalCountSpeeches = 200;
@@ -18,9 +19,23 @@ package com.company.Lesson47.Task04;
 8.1 Подумай, какой метод можно вызвать у объекта ivanov, чтобы Иванов разговаривал, пока не завершится всё свободное время.
 */
 public class Test01 {
-    static int totalCountSpeeches = 200;
-    static int soundsInOneSpeech = 1000000;
-    public static void main(String[] args) {
-       int a = 10;
+    static volatile int totalCountSpeeches = 200;
+    static volatile int soundsInOneSpeech = 1000000;
+
+    public static void main(String[] args) throws InterruptedException {
+
+        Politic pol1 = new Politic("Иванов");
+        pol1.join();
+
+        Politic pol2 = new Politic("Петров");
+        Politic pol3 = new Politic("Сидоров");
+
+        while ((pol1.getCountSpeaches() + pol2.getCountSpeaches() + pol3.getCountSpeaches()) < totalCountSpeeches) {
+
+
+        }
+        System.out.println(pol1.toString());
+        System.out.println(pol2.toString());
+        System.out.println(pol3.toString());
     }
 }

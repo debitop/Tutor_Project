@@ -1,4 +1,5 @@
 package com.company.Lesson48.Task04_Sleep2;
+
 /*  (Секундомер)
 1. В выполняющем классе создать статическую переменную isStopped, присвоить ей значение false
 2. Создать класс Stopwatch, унаследовать его от Thread
@@ -34,9 +35,10 @@ public class Runner {
     private String name;
     private int speed;
     Stopwatch stopwatch;
-    Runner(String name, int speed){
-        this.name=name;
-        this.speed=speed;
+
+    Runner(String name, int speed) {
+        this.name = name;
+        this.speed = speed;
         stopwatch = new Stopwatch(this);
     }
 
@@ -47,7 +49,8 @@ public class Runner {
     public int getSpeed() {
         return speed;
     }
-    void start(){
 
+    void start() {
+        stopwatch.start();
     }
 }
