@@ -1,5 +1,7 @@
 package com.company.Lesson48.Task07_fibonachi;
 
+import java.util.ArrayList;
+
 public class Test01 {
 
     private static int f(int index) {
@@ -18,7 +20,9 @@ public class Test01 {
         int n = 11;
         for (int i = 1; i <= n; i++) {
             System.out.println(f(i) + " ");
+
         }
     }
 
 }
+
