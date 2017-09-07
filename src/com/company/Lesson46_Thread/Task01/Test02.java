@@ -1,4 +1,4 @@
-package com.company.Lesson46.Task01;
+package com.company.Lesson46_Thread.Task01;
 
 public class Test02 {
     public static void main(String[] args) {
