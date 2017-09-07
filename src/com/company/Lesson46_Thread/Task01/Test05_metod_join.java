@@ -1,4 +1,4 @@
-package com.company.Lesson46.Task01;
+package com.company.Lesson46_Thread.Task01;
 
 /* Вывод стек-трейса
 1. Создать таск - класс public static SpecialThread - на основании интерфейса Runnable

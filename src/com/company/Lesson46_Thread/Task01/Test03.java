@@ -1,4 +1,4 @@
-package com.company.Lesson46.Task01;
+package com.company.Lesson46_Thread.Task01;
 
 /* My first thread
 Создать public static class TestThread - нить с помощью интерфейса Runnable.
