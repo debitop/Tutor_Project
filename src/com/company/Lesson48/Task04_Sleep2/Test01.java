@@ -1,4 +1,7 @@
 package com.company.Lesson48.Task04_Sleep2;
+
+import static java.lang.Thread.sleep;
+
 /*  (Секундомер)
 1. В выполняющем классе создать статическую переменную isStopped, присвоить ей значение false
 2. Создать класс Stopwatch, унаследовать его от Thread
@@ -31,10 +34,14 @@ package com.company.Lesson48.Task04_Sleep2;
 Если Петров делает 2 шага в секунду, то за 2 секунды он сделает 4 шага.
 */
 public class Test01 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Runner runner1=new Runner("Иванов", 100);
         Runner runner2=new Runner("Петров", 110);
         runner1.start();
+        runner2.start();
+        sleep(2000);
+        isStopped=true;
+        sleep(1000);
 
     }
     static boolean isStopped = false;
