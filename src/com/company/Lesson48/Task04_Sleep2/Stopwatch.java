@@ -40,7 +40,7 @@ public class Stopwatch extends Thread{
     void doSeveralSteps() throws InterruptedException {
         stepNumber++;
        int speed2=owner.getSpeed();
-       sleep(1000);
+       sleep(1000/speed2);
         System.out.println(owner.getName() + " делает шаг №" + stepNumber + "!");
     }
 
