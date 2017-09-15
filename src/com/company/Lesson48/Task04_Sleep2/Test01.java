@@ -35,8 +35,8 @@ import static java.lang.Thread.sleep;
 */
 public class Test01 {
     public static void main(String[] args) throws InterruptedException {
-        Runner runner1=new Runner("Иванов", 100);
-        Runner runner2=new Runner("Петров", 110);
+        Runner runner1=new Runner("Иванов", 3);
+        Runner runner2=new Runner("Петров", 4);
         runner1.start();
         runner2.start();
         sleep(2000);
