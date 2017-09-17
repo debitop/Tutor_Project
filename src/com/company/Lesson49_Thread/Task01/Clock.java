@@ -35,15 +35,41 @@ public class Clock extends Thread {
         start();
     }
 
-    void printTime() {
+    void printTime() throws InterruptedException {
         if (hours == 24 && minutes == 60 && seconds == 60) {
             System.out.println("В г. " + cityName + " полночь!");
         } else
             System.out.println("В г. " + cityName + " сейчас " + hours + ":" + minutes + ":" + seconds + "!");
+        sleep(1000);
+        if (seconds != 59) {
+            seconds++;
+        } else {
+            seconds = 0;
+            if (minutes != 59) {
+                minutes++;
+            } else {
+                minutes = 0;
+                if (hours != 23) {
+                    hours++;
+                } else
+
+                    System.out.println("В г. " + cityName + " полночь!");
+
+                hours = 0;
+                seconds++;
+            }
+        }
     }
 
     @Override
     public void run() {
-        super.run();
+        try {
+            while (Test01.isStopped == false) {
+                printTime();
+            }
+        } catch (InterruptedException e) {
+
+        }
+
     }
 }
