@@ -36,29 +36,47 @@ public class Clock extends Thread {
     }
 
     void printTime() throws InterruptedException {
-        if (hours == 24 && minutes == 60 && seconds == 60) {
+        if (hours == 0 && minutes == 0 && seconds == 0) {
             System.out.println("В г. " + cityName + " полночь!");
         } else
             System.out.println("В г. " + cityName + " сейчас " + hours + ":" + minutes + ":" + seconds + "!");
         sleep(1000);
-        if (seconds != 59) {
-            seconds++;
-        } else {
+        seconds++;
+        if (seconds == 60) {
+            minutes++;
             seconds = 0;
-            if (minutes != 59) {
-                minutes++;
-            } else {
-                minutes = 0;
-                if (hours != 23) {
-                    hours++;
-                } else
-
-                    System.out.println("В г. " + cityName + " полночь!");
-
-                hours = 0;
-                seconds++;
-            }
         }
+        if (minutes == 60) {
+            hours++;
+            minutes = 0;
+        }
+        if (hours == 24) {
+            System.out.println("В г. " + cityName + " полночь!");
+            sleep(1000);
+            hours = 0;
+            seconds++;
+        }
+
+        //       seconds == 60 ? (minutes++; seconds = 0;):seconds++;
+//        if (seconds != 59) {
+//            seconds++;
+//        } else {
+//            seconds = 0;
+//            if (minutes != 59) {
+//                minutes++;
+//            } else {
+//                minutes = 0;
+//                if (hours != 23) {
+//                    hours++;
+//                } else
+//
+//                    System.out.println("В г. " + cityName + " полночь!");
+//
+//                hours = 0;
+//                sleep(1000);
+//                seconds++;
+//            }
+//        }
     }
 
     @Override
