@@ -21,9 +21,13 @@ package com.company.Lesson49_Thread.Task01;
 - отправить главную нить в сон на 1 секунду
 */
 public class Test01 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Clock clock =new Clock("London",0,0,0);
+        Thread.sleep(4000);
+        isStopped=true;
+        Thread.sleep(1000);
 
     }
-    boolean isStopped = false;
+    static boolean isStopped = false;
 
 }
