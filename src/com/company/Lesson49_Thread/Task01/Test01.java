@@ -22,7 +22,7 @@ package com.company.Lesson49_Thread.Task01;
 */
 public class Test01 {
     public static void main(String[] args) throws InterruptedException {
-        Clock clock =new Clock("London",0,0,0);
+        Clock clock =new Clock("London",23,59,58);
         Thread.sleep(4000);
         isStopped=true;
         Thread.sleep(1000);
