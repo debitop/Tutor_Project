@@ -1,4 +1,4 @@
-package com.company.Lesson51;
+package com.company.Lesson51_Thread__obratniy_otschet;
 
 /* Обратный отсчет
 1. В выполняющем классе создать статический список строк
