@@ -1,4 +1,7 @@
 package com.company.Lesson52_Aeroport;
+
+import static java.lang.Thread.sleep;
+
 /* Аэропорт
 1. В выполняющем классе создать метод waiting(), который отправляет нить в сон на 100мс
 2. В выполняющем классе создать метод takingOff(), который отправляет нить в сон на 100мс
@@ -27,6 +30,21 @@ package com.company.Lesson52_Aeroport;
 */
 public class Test01 {
     public static void main(String[] args) {
+        Plane plane1 = new Plane("first");
+        // plane1.start();
+        Plane plane2 = new Plane("second");
+        //  plane2.start();
+        Plane plane3 = new Plane("third");
+        // plane3.start();
+    }
 
+    static Runway RUNWAY = new Runway();
+
+    static void waiting() throws InterruptedException {
+        sleep(100);
+    }
+
+    static void takingoff() throws InterruptedException {
+        sleep(100);
     }
 }
