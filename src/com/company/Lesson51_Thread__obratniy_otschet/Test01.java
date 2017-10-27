@@ -1,4 +1,4 @@
-package com.company.Lesson51;
+package com.company.Lesson51_Thread__obratniy_otschet;
 
 import java.util.ArrayList;
 import java.util.List;
