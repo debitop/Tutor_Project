@@ -8,8 +8,14 @@ package com.company.Lesson55_Thread_a_bez_interrupt_slabo.Task01;
 5. В выполняющем классе запустить нить, она должна отработать 3 секунды, а потом прерваться
 */
 public class Test01 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         TestThread test =new TestThread();
         new Thread(test).start();
+        Thread.sleep(3000);
+        ourInterruptMethod(test);
+    }
+
+    static synchronized void ourInterruptMethod(TestThread thraad) {
+        thraad.a = false;
     }
 }
