@@ -9,8 +9,7 @@ package com.company.Lesson55_Thread_a_bez_interrupt_slabo.Task01;
 5. В выполняющем классе запустить нить, она должна отработать 3 секунды, а потом прерваться
 */
 public class TestThread implements Runnable {
-    boolean a = true;
-    int count = 0;
+    volatile boolean a = true;
 
     @Override
     public void run() {
@@ -19,17 +18,11 @@ public class TestThread implements Runnable {
             System.out.println("Tik");
             try {
                 Thread.sleep(500);
-                count++;
-                if (count == 6) {
-                    ourInterruptMethod();
-                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    void ourInterruptMethod() {
-        a = false;
-    }
+
 }
