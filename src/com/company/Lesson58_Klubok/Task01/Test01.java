@@ -3,6 +3,7 @@ package com.company.Lesson58_Klubok.Task01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 /* Клубок
@@ -19,8 +20,25 @@ import java.util.List;
 5. В методе main запустить 2,4 и 5 нити. ( Проверить работает ли 4 нить можно при помощи метода isAlive() )
 */
 public class Test01 {
-    public static void main(String[] args) {
- //Thread
+    static List<Thread> threads = new ArrayList<Thread>();
+
+    static {
+        threads.add(new Thread01());
+        threads.add(new Thread02());
+        threads.add(new Thread03());
+        threads.add(new Thread04());
+        threads.add(new Thread05());
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        Thread t2 = threads.get(1);
+        t2.start();
+        t2.interrupt();
+        Thread04 t4 = (Thread04) threads.get(3);
+        t4.start();
+        t4.showWarning();
+        Thread t5 = threads.get(4);
+        t5.start();
     }
 
     static void sleep() throws InterruptedException {
@@ -30,33 +48,35 @@ public class Test01 {
 
 
 }
-class Thread01 extends Thread{
+
+class Thread01 extends Thread {
     @Override
     public void run() {
-        while (true){
-
+        while (true) {
+            System.out.println("нить 1");
         }
     }
 }
-class Thread02 extends Thread{
+
+class Thread02 extends Thread {
     @Override
 
     public void run() {
         try {
-           while (!isInterrupted()){
+            while (!isInterrupted()) {
 
-           }
-           throw new InterruptedException();
-        }
-        catch (InterruptedException e){
+            }
+            throw new InterruptedException();
+        } catch (InterruptedException e) {
             System.out.println("InterruptedException");
         }
     }
 }
+
 class Thread03 extends Thread {
     @Override
     public void run() {
-        while (true){
+        while (true) {
             System.out.println("Ура");
             try {
                 sleep(500);
@@ -67,32 +87,44 @@ class Thread03 extends Thread {
     }
 
 }
-class Thread04 extends Thread implements Message{
+
+class Thread04 extends Thread implements Message {
     @Override
     public void run() {
-        super.run();
+        while (!isInterrupted()) {
+
+        }
+
     }
 
     @Override
     public void showWarning() {
-        interrupt();
+        System.out.println("прерываем Т4");
+        this.interrupt();
 
     }
 }
+
 class Thread05 extends Thread {
     @Override
     public void run() {
-         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-         int num=0;
-        try {
-            if (reader.readLine()=="N") {
-                System.out.println(num);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int num = 0;
+        while (true) {
+            try {
+                String s = reader.readLine();
+                if (s.equals("N")) {
+                    System.out.println(num);
+                    reader.close();
+                    break;
+
+                } else {
+                    num += Integer.parseInt(s);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-            else {
-                num+=Integer.parseInt(reader.readLine());
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+
     }
 }
