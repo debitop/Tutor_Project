@@ -2,8 +2,8 @@ package com.company.HomeWork;
 
 public class Test06_nod {
     public static void main(String[] args) {
-        int a = 240;
-        int b = 80;
+        int a = 594;
+        int b = 684;
         System.out.println(nod(a, b));
     }
 
