@@ -17,7 +17,7 @@ public class Test04_factorial {
     static BigInteger fact(int num){
         BigInteger fact=BigInteger.ONE;
         if (num==0){
-             return BigInteger.ONE;
+             return fact;
         }
         if (cache.containsKey(num)) {
             System.out.print("cache: ");
