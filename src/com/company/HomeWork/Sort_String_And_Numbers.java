@@ -23,6 +23,10 @@ public class Sort_String_And_Numbers {
             else list.add(a);
         }
         String[] list2 = list.toArray(new String[list.size()]);
+        sort(list2);
+        for (int i = 0; i < list2.length; i++) {
+            System.out.println(list2[i]);
+        }
 
     }
 
@@ -36,17 +40,37 @@ public class Sort_String_And_Numbers {
     }
 
     static boolean isGreatherThen(String a, String b) {
-       return a.compareTo(b) > 0;
+        return a.compareTo(b) > 0;
 
     }
 
     static void sort(String[] str) {
-for (int i=0; i<str.length; i++){
-    if (isNumber(str[i])){
+        for (int i = 0; i < str.length; i++) {
+            if (isNumber(str[i])) {
+                for (int j = 0; j < str.length; j++) {
+                    if (isNumber(str[j])) {
+                        String a = str[i];
+                        if (Integer.parseInt(str[j]) > Integer.parseInt(str[i])) {
+                            str[i] = str[j];
+                            str[j] = a;
+                        }
+                    }
 
-    }
+                }
 
-}
+            } else {
+                for (int j = 0; j < str.length; j++) {
+                    if (!isNumber(str[j])) {
+                        String a = str[i];
+                        if (isGreatherThen(str[j], (str[i]))) {
+                            str[i] = str[j];
+                            str[j] = a;
+                        }
+                    }
+                }
+            }
+
+        }
 
     }
 
