@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 Ввести с клавиатуры два имени, и если имена одинаковые, вывести сообщение «Имена идентичны».
         Если имена разные, но их длины равны – вывести сообщение – «Длины имен равны».*/
 
-public class Test03 {
+public class Test03_sravnit_names {
     public static void main(String[] args) throws IOException {
          BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String name1 = reader.readLine();
