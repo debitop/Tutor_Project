@@ -19,6 +19,7 @@ public class Test01 {
        if (cat1.fight(cat2)) System.out.println("win is " + cat1.name);
         else System.out.println("win is " + cat2.name);
 
+
     }
     public static class Cat{
         String name;
