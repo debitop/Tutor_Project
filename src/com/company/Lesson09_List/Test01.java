@@ -37,6 +37,7 @@ public class Test01 {
             String s = reader.readLine();
             if (s.isEmpty()) break;
             list.add(s);
+
         }
 
         list = fix(list);
