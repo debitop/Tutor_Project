@@ -30,7 +30,7 @@ import java.util.List;
 
     //for (String  s: list) {} - forEach прохождение по элементам коллекции (iter)
 public class Test01 {
-    public static void main (String[] args) throws IOException {
+    public static void main  (String[] args) throws IOException {
         List<String> list = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
