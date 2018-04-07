@@ -19,11 +19,14 @@ public class StringSort {
         }
         String[] array = list.toArray(new String[list.size()]);
         sort(array);
+        for (int i=0; i<array.length; i++){
+            System.out.println(array[i]);
+        }
     }
 
     private static void sort(String[] array) {
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; i < array.length - 1 - i; j++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
                 String a = array[j + 1];
                 if (isGreaterThen(array[j + 1], array[j])) {
                     array[j + 1] = array[j];
